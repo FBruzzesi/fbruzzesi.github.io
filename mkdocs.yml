@@ -1,0 +1,119 @@
+# Project information
+site_name: FBruzzesi
+site_url: https://fbruzzesi.github.io/
+site_author: Francesco Bruzzesi
+site_description: Personal blog
+
+# Repository information
+repo_name: FBruzzesi/fbruzzesi.github.io
+repo_url: https://github.com/fbruzzesi/fbruzzesi.github.io
+
+# Configuration
+use_directory_urls: true
+theme:
+  name: material
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  icon:
+    annotation: material/plus-circle
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: teal
+    accent: deep-orange
+    toggle:
+      icon: material/lightbulb
+      name: Switch to light mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: teal
+    accent: deep-orange
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.path
+    # - navigation.indexes
+    # - navigation.footer
+    # - navigation.top
+    # - navigation.tracking
+
+    # - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.tooltips
+    # - content.tabs.link
+
+    # - search.suggest
+    # - search.highlight
+    # - search.share
+    # - search.suggest
+
+    # - toc.follow
+
+  logo: img/iso-week-date-logo.svg
+  favicon: img/iso-week-date-logo.svg
+
+# Plugins
+plugins:
+  - blog
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fbruzzesi/fbruzzesi.github.io
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/francesco-bruzzesi/
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite
+  # - def_list
+  - footnotes
+  # - md_in_html
+  # - toc:
+  #     permalink: true
+  # - pymdownx.arithmatex:
+  #     generic: true
+  # - pymdownx.betterem:
+  #     smart_enable: all
+  # - pymdownx.caret
+  # - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji
+  # - pymdownx.keys
+  # - pymdownx.magiclink:
+  #     repo_url_shorthand: true
+  #     user: squidfunk
+  #     repo: mkdocs-material
+  # - pymdownx.mark
+  # - pymdownx.smartsymbols
+  
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  # - pymdownx.tilde
+
+nav:
+  - Blog:
+    - blog/index.md
+  - About Me: about.md

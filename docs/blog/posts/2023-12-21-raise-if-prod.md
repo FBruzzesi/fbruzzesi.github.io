@@ -7,7 +7,7 @@ categories:
   - TIL
 ---
 
-# Raise if "prod"
+# Raise if... "prod"
 
 Last weekend I was meeting with a ex-colleague of mine and we were discussing about some python code, as one does during a weekend.
 
@@ -70,7 +70,9 @@ Oh gosh! That's a lot of nested functions! Let's break it down:
 
 If you want to read more about decorators with arguments, I wrote about it in the [deczoo documentation](https://fbruzzesi.github.io/deczoo/decorators/advanced/#decorators-with-arguments).
 
-## `raise_if` with type hints
+## Type Annotation
+
+Since people (me included) are big fans of type annotations, let's try to add them to our `raise_if` decorator:
 
 ```py
 from functools import wraps

@@ -5,6 +5,7 @@ AUTHORS_PATH: Final[str] = "docs/blog/.authors.yml"
 
 
 def split_on(value: str, separator: str = ",") -> tuple[str, ...]:
+    """Split a string on a separator and return a tuple of the items."""
     return tuple(item.strip() for item in value.split(separator))
 
 

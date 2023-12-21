@@ -40,6 +40,8 @@ def create_new(
         ),
     ] = None,
 ):
+    """Create a new post in `docs/blog/posts` with the given title, authors, date, tags and categories."""
+
     values = {
         "title": title,
         "authors": authors,

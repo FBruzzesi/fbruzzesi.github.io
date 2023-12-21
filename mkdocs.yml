@@ -57,8 +57,8 @@ theme:
 
     # - toc.follow
 
-  logo: img/iso-week-date-logo.svg
-  favicon: img/iso-week-date-logo.svg
+  # logo: img/logo-filename.svg
+  # favicon: img/logo-filename.svg
 
 # Plugins
 plugins:
@@ -114,6 +114,7 @@ markdown_extensions:
   # - pymdownx.tilde
 
 nav:
+  - Home: index.md
   - Blog:
     - blog/index.md
   - About Me: about.md

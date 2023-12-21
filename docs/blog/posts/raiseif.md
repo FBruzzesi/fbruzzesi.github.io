@@ -1,14 +1,15 @@
 ---
 draft: true
-date: 2023-12-20 
+date: 2023-12-21
+authors:
+  - fbruzzesi
 categories:
   - TIL
-
 ---
 
 # Raise if "prod"
 
-Last weekend I was meeting with a ex-collegue of mine and we were discussing about some python code, as one does during a weekend.
+Last weekend I was meeting with a ex-colleague of mine and we were discussing about some python code, as one does during a weekend.
 
 While going through some high level code and architecture, he explained to me how they are using a python decorator called `non_prod_only` to raise an exception if the code is run in production.
 

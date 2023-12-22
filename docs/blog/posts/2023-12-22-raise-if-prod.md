@@ -1,13 +1,17 @@
 ---
-draft: true
+draft: false
 date: 2023-12-22
 authors:
   - fbruzzesi
 categories:
   - TIL
+  - Python
+tags:
+  - Python
+  - Decorators
 ---
 
-# Raise if... "prod"
+# ❗Raise if... "prod"
 
 Last weekend I was meeting with a ex-colleague of mine and we were discussing about some python code, as one does during a weekend.
 
@@ -16,6 +20,8 @@ While going through some high level code and architecture, he explained to me ho
 The idea is very simple, but effective at the same time. Whenever you decorate a function with `@non_prod_only`, you prevent your future self (that will be pushing to `main`) to remember that such functionality shouldn't end up in production.
 
 And even if it does, you will get a *nice exception* that will safe you from running the function.
+
+<!-- more -->
 
 ## The decorator
 
@@ -60,6 +66,8 @@ def raise_if(condition, exception = Exception, message = ""):
     return decorator
 ```
 
+<img src="../../../../../images/2023-12-22-raise-if-prod/confused.gif" width=230 height=230 align="right">
+
 Oh gosh! That's a lot of nested functions! Let's break it down:
 
 1. `raise_if` is a function that takes a `condition`[^1] and returns a decorator
@@ -68,11 +76,11 @@ Oh gosh! That's a lot of nested functions! Let's break it down:
     * raises an `exception` if it is `True`
     * otherwise, it returns the result of `func`
 
-If you want to read more about decorators with arguments, I wrote about it in the [deczoo documentation](https://fbruzzesi.github.io/deczoo/decorators/advanced/#decorators-with-arguments).
+If you want to read more about decorators with arguments, I wrote about it in the [deczoo documentation][deczoo].
 
 ## Type Annotation
 
-Since people (me included) are big fans of type annotations, let's try to add them to our `raise_if` decorator:
+Since many people (me included) are big fans of type annotations, let's try to add them to our `raise_if` decorator:
 
 ```py
 from functools import wraps
@@ -97,3 +105,5 @@ def raise_if(
 ```
 
 [^1]: In this implementation `condition` is a callable that takes no arguments and returns a boolean value. It is evaluated at runtime, so it can be as complex as you want it to be.
+
+[deczoo]: https://fbruzzesi.github.io/deczoo/decorators/advanced/#decorators-with-arguments

@@ -5,7 +5,7 @@ authors:
   - fbruzzesi
 ---
 
-# Hello world
+# 👋 Hello world
 
 Roughly one year ago I attended one of the most interesting and fun (online) conference you could ever attend: the one and only [NormConf][normconf], organized by [Vicki Boykis][vicki-boykis].
 
@@ -14,6 +14,8 @@ The speakers list was just out of this world, I don't think you can organize a b
 If you are curious, all the talks are available on [YouTube][youtube-normconf].
 
 But what does this have to do with this blog? Why am I writing about a conference I attended more than a year ago?
+
+<!-- more -->
 
 ## The motivation behind this blog
 

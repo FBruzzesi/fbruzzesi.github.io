@@ -1,8 +1,8 @@
 # Project information
-site_name: FBruzzesi
+site_name: One commit at a time
 site_url: https://fbruzzesi.github.io/
 site_author: Francesco Bruzzesi
-site_description: Personal blog
+site_description: FBruzzesi personal blog
 
 # Repository information
 repo_name: FBruzzesi/fbruzzesi.github.io
@@ -32,11 +32,14 @@ theme:
     toggle:
       icon: material/lightbulb-outline
       name: Switch to dark mode
+  
+  logo: images/blog-logo.svg
+  favicon: images/blog-logo.svg
+
   features:
+    - navigation.indexes
     - navigation.tabs
-    - navigation.tabs.sticky
-    # - navigation.sections
-    # - navigation.expand
+    
     # - navigation.path
     # - navigation.indexes
     # - navigation.footer
@@ -57,17 +60,23 @@ theme:
 
     # - toc.follow
 
-  # logo: img/logo-filename.svg
-  # favicon: img/logo-filename.svg
-
 # Plugins
 plugins:
-  - blog
+  - blog:
+      blog_toc: true
+      post_date_format: long
+      # post_url_format: "{file}"
+      post_excerpt: required
+      post_readtime_words_per_minute: 250
+      archive_date_format: yyyy MMMM
+      archive_url_date_format: yyyy/MM
+
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 
 # Customization
 extra:
+  homepage: blog/
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/fbruzzesi/fbruzzesi.github.io
@@ -80,17 +89,18 @@ markdown_extensions:
   - admonition
   - attr_list
   - codehilite
-  # - def_list
+  - def_list
   - footnotes
-  # - md_in_html
-  # - toc:
-  #     permalink: true
+  - md_in_html
+  - toc:
+      permalink: true
   # - pymdownx.arithmatex:
   #     generic: true
   # - pymdownx.betterem:
   #     smart_enable: all
   # - pymdownx.caret
-  # - pymdownx.details
+  - pymdownx.details
+  - pymdownx.emoji
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.snippets
@@ -98,7 +108,7 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.emoji
+  
   # - pymdownx.keys
   # - pymdownx.magiclink:
   #     repo_url_shorthand: true
@@ -106,7 +116,6 @@ markdown_extensions:
   #     repo: mkdocs-material
   # - pymdownx.mark
   # - pymdownx.smartsymbols
-  
   # - pymdownx.tabbed:
   #     alternate_style: true
   # - pymdownx.tasklist:

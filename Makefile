@@ -1,9 +1,8 @@
 init-env:
-	python -m pip install -r requirements/requirements-core.txt --no-cache-dir
+	python -m pip install -r requirements/core.txt --no-cache-dir
 
 init-dev:
-	python -m pip install -r requirements/requirements-core.txt --no-cache-dir
-	python -m pip install -r requirements/requirements-dev.txt --no-cache-dir
+	python -m pip install -r requirements/core.txt -r requirements/dev.txt -r requirements/blog.txt --no-cache-dir
 
 typo:
 	typos automation docs

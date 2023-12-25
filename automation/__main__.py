@@ -11,34 +11,20 @@ ALPHANUMERIC: Final[re.Pattern] = re.compile(r"\W+")
 
 app = Typer(name="automation CLI", help="CLI for automating tasks")
 
+TITLE_OPTION = Annotated[str, Option(help="Post title")]
+AUTHORS_OPTION = Annotated[str, Option(help="Authors, must be in `.authors.yml`", callback=authors_callback)]
+DATE_OPTION = Annotated[str, Option(help="Post date")]
+TAGS_OPTION = Annotated[Optional[str], Option(help="Tags", callback=multi_value_callback)]
+CATEGORIES_OPTION = Annotated[Optional[str], Option(help="Categories", callback=multi_value_callback)]
+
 
 @app.command()
 def create_new(
-    title: Annotated[str, Option(help="Post title")],
-    authors: Annotated[
-        str,
-        Option(
-            help="Post authors, must belong to the authors list in `.authors.yml`",
-            callback=authors_callback,
-        ),
-    ],
-    date: Annotated[str, Option(help="Post date")] = datetime.now().strftime(
-        "%Y-%m-%d"
-    ),
-    tags: Annotated[
-        Optional[str],
-        Option(
-            help="Tags",
-            callback=multi_value_callback,
-        ),
-    ] = None,
-    categories: Annotated[
-        Optional[str],
-        Option(
-            help="Categories",
-            callback=multi_value_callback,
-        ),
-    ] = None,
+    title: TITLE_OPTION,
+    authors: AUTHORS_OPTION = "fbruzzesi",
+    date: DATE_OPTION = datetime.now().strftime("%Y-%m-%d"),
+    tags: TAGS_OPTION = None,
+    categories: CATEGORIES_OPTION = None,
 ):
     """Create a new post in `docs/blog/posts` with the given title, authors, date, tags and categories."""
 

@@ -9,8 +9,8 @@ typo:
 
 lint:
 	ruff version
-	ruff check automation --fix
-	ruff format automation
+	ruff format automation --line-length 120
+	ruff check automation --fix --line-length 120
 	ruff clean
 
 serve:

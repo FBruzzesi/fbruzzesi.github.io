@@ -5,7 +5,7 @@ from typing import Annotated, Final, Optional
 from jinja2 import Template
 from typer import Typer, Option
 
-from callbacks import authors_callback, multi_value_callback
+from automation.callbacks import authors_callback, multi_value_callback
 
 ALPHANUMERIC: Final[re.Pattern] = re.compile(r"\W+")
 

@@ -12,7 +12,7 @@ I wrote about it in my first post, [Hello World][hello-world]. In extreme synthe
 
 > I wanted to have a place to write about things I learn and experience, mostly regarding my work (programming) life.
 
-[gh-page]: https://fbruzzesi.github.io/blog
+[gh-page]: https://fbruzzesi.github.io/blog/
 [mkdocs]: https://www.mkdocs.org/
 [mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
 [blog-plugin]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/

@@ -44,7 +44,7 @@ Non-exhaustive list and in various order, the tech stack I am most familiar with
 
 [<img height="40" width="40" src="https://cdn.simpleicons.org/python">](https://www.python.org/) &nbsp;&nbsp;
 [<img height="40" width="40" src="https://cdn.simpleicons.org/pandas">](https://pandas.pydata.org/)
-[<img height="40" width="40" src="https://cdn.simpleicons.org/polars">](https://www.pola.rs/)
+[<img height="40" width="40" src="https://cdn.simpleicons.org/polars">](https://pola.rs/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/numpy">](https://numpy.org/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/scipy">](https://scipy.org/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/scikitlearn">](https://scikit-learn.org/stable/)
@@ -53,7 +53,7 @@ Non-exhaustive list and in various order, the tech stack I am most familiar with
 [<img height="40" width="40" src="https://cdn.simpleicons.org/fastapi">](https://fastapi.tiangolo.com/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/plotly">](https://plotly.com/python/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/pytest">](https://docs.pytest.org/)
-[<img height="40" width="40" src="https://cdn.simpleicons.org/ruff">](https://beta.ruff.rs/docs/)
+[<img height="40" width="40" src="https://cdn.simpleicons.org/ruff">](https://docs.astral.sh/ruff/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/pypi">](https://pypi.org/)
 
 <br>

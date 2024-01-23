@@ -36,13 +36,16 @@ The steps are really simple:
     .vscode
     .env
     **/*.log
-    **/dev_nb.ipynb
-    _typos.toml
+    **/dev_nb.ipynb  # (1)
+    _typos.toml  # (2)
 
     # caches
     .mypy_cache/
     .ruff_cache/
     ```
+
+    1. This is a notebook I typically have and use for development, exploration and experimentation. I don't want to commit it to the repository.
+    2. Settings for [typos: source code spell checker](https://github.com/crate-ci/typos)
 
 3. Make **git** aware of such global configuration by setting the `core.excludesFile` property to the path of the `.gitignore` file you just created:
 

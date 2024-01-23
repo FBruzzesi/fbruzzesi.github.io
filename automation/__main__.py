@@ -11,6 +11,7 @@ from typer import Typer, Option
 ALPHANUMERIC: Final[re.Pattern] = re.compile(r"\W+")
 AUTHORS_PATH: Final[str] = "docs/blog/.authors.yml"
 
+
 def split_on(value: str, separator: str = ",") -> tuple[str, ...]:
     """Split a string on a separator and return a tuple of the items."""
     return tuple(item.strip() for item in value.split(separator))
@@ -39,7 +40,6 @@ def authors_callback(value: str) -> tuple[str, ...]:
     return input_authors
 
 
-
 app = Typer(name="automation CLI", help="CLI for automating tasks")
 
 TITLE_OPTION = Annotated[str, Option(help="Post title")]
@@ -47,7 +47,6 @@ AUTHORS_OPTION = Annotated[str, Option(help="Authors, must be in `.authors.yml`"
 DATE_OPTION = Annotated[str, Option(help="Post date")]
 TAGS_OPTION = Annotated[Optional[str], Option(help="Tags", callback=multi_value_callback)]
 CATEGORIES_OPTION = Annotated[Optional[str], Option(help="Categories", callback=multi_value_callback)]
-
 
 
 @app.command()

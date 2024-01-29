@@ -3,9 +3,13 @@ init-env:
 
 init-dev:
 	python -m pip install -r requirements/core.txt -r requirements/dev.txt -r requirements/blog.txt --no-cache-dir
+	cargo install typos-cli mlc
 
 typo:
 	typos automation docs
+
+linkcheck:
+	mlc docs
 
 lint:
 	ruff version
@@ -26,4 +30,4 @@ clean:
 		.mypy_cache */.mypy_cache */**/.mypy_cache \
 		site build dist htmlcov .coverage .tox
 
-check: typo lint clean
+check: typo linkcheck lint clean

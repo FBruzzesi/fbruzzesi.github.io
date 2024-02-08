@@ -1,8 +1,8 @@
 # 👋 Hi there, I'm Francesco
   
-## ❗Disclaimer
+!!! warning "Disclaimer"
 
-All the opinions on this blog are solely my own and do not represent the view of my employers, current nor previous.
+    All the opinions on this blog are solely my own and do not represent the view of my employers, current nor previous.
 
 ## 🦸‍♂️ Who am I?
 
@@ -10,11 +10,11 @@ I hate to describe myself with a generic title - it may sound clichè, yet I am 
 
 I fell in love with mathematics in my early years, I can remember counting and adding numbers at 4 or 5: mathematics and logic reasoning have been a big part of my life ever since.
 
-After pursuing a M.Sc. in pure mathematics at [ALGANT][algant], I decided not to pursue a PhD, but to move into industry to solve real-world problems through mathematical models and machine learning.
+After pursuing a M.Sc. in pure mathematics at [ALGANT][algant], I decided to not join a PhD programme, which would have been the natural path forward, but to move into industry to solve real-world problems through mathematical models and machine learning.
 
-This was in the middle of 2018, and data science hype arrived in Italy as well (that's when you should know you are already late to the party 😂).
+This was in the mid-late 2018, and data science hype landed in Italy as well (that's when you should know you are already late to the party 😂).
 
-That was about the time I started to learn about data science and in late 2018 I started working as a data scientist, and I am still at it today.
+That was about the time I started to learn about the topic and in late 2018 I started working as a data scientist, and I am still at it today.
 
 ## 💼 Employer(s)
 
@@ -24,7 +24,7 @@ That was about the time I started to learn about data science and in late 2018 I
 
 ## 💻 Open Source
 
-I am a big fan of open source, and I try to contribute to it as much as I can (which is not much, but I am trying to improve) to give back to the community.
+I consider myself an open source enthusiast, and I try to contribute to it as much as I can (which is not much, but I am trying to improve) to give back to the community.
 
 Here is a list of open source projects I created (mostly for my own use and need but hopefully useful to others as well) and/or maintain:
 
@@ -56,8 +56,6 @@ Non-exhaustive list and in various order, the tech stack I am most familiar with
 [<img height="40" width="40" src="https://cdn.simpleicons.org/ruff">](https://docs.astral.sh/ruff/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/pypi">](https://pypi.org/)
 
-<br>
-
 [<img height="40" width="40" src="https://cdn.simpleicons.org/rust">](https://www.rust-lang.org/) &nbsp;&nbsp;
 [<img height="40" width="40" src="https://cdn.simpleicons.org/postgresql">](https://www.postgresql.org/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/sqlite">](https://www.sqlite.org/index.html)
@@ -69,8 +67,6 @@ Non-exhaustive list and in various order, the tech stack I am most familiar with
 [<img height="40" width="40" src="https://cdn.simpleicons.org/visualstudiocode">
 ](https://code.visualstudio.com/docs)
 
-<br>
-
 [<img height="40" width="40" src="https://cdn.simpleicons.org/git">](https://git-scm.com/) &nbsp;&nbsp;
 [<img height="40" width="40" src="https://cdn.simpleicons.org/github">](https://github.com/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/githubactions">](https://github.com/features/actions) &nbsp;&nbsp;
@@ -81,8 +77,6 @@ Non-exhaustive list and in various order, the tech stack I am most familiar with
 [<img height="40" width="40" src="https://cdn.simpleicons.org/amazoneks">](https://docs.aws.amazon.com/eks/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/amazonrds">](https://docs.aws.amazon.com/rds/)
 [<img height="40" width="40" src="https://cdn.simpleicons.org/awslambda">](https://docs.aws.amazon.com/lambda/)
-
-
 
 [algant]: https://algant.eu/
 [hello-fresh]: https://www.linkedin.com/company/hellofresh/com/

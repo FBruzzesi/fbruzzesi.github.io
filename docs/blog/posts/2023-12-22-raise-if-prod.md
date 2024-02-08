@@ -108,3 +108,5 @@ def raise_if(
 [^1]: In this implementation `condition` is a callable that takes no arguments and returns a boolean value. It is evaluated at runtime, so it can be as complex as you want it to be.
 
 [deczoo]: https://fbruzzesi.github.io/deczoo/decorators/advanced/#decorators-with-arguments
+
+<img src="../../../../../images/written-by-human.svg" align="right">

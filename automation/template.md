@@ -20,3 +20,5 @@ tags:
 ---
 
 # {{title}}
+
+<img src="../../../../../images/written-by-human.svg" align="right">

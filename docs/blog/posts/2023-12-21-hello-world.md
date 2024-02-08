@@ -63,3 +63,5 @@ mkdocs-material is an amazing theme, and I am very happy with it for its simplic
 [chris-talk]: https://www.youtube.com/watch?v=HiF83i1OLOM&list=WL&index=89&ab_channel=NormConf
 [mkdocs-material-blog]: https://squidfunk.github.io/mkdocs-material/plugins/blog/
 [gh-pages]: https://pages.github.com/
+
+<img src="../../../../../images/written-by-human.svg" align="right">

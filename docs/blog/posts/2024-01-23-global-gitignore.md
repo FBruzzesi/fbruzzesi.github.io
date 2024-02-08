@@ -58,3 +58,5 @@ The steps are really simple:
 From now on, every time you run a git command the files and patterns you added to the global `.gitignore` file will be ignored.
 
 Happy coding! 🚀
+
+<img src="../../../../../images/written-by-human.svg" align="right">

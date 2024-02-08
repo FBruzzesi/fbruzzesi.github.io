@@ -98,7 +98,7 @@ We should celebrate the elegance that simplicity brings to our craft, ensuring t
 Let's do not forget about the Zen of Python:
 
 ```terminal
-python -c 'import this' | head -n 5  
+python -c 'import this' | head -n 6
 ```
 
 ```terminal hl_lines="5"
@@ -107,6 +107,7 @@ The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
+Complex is better than complicated.
 ```
 
 [joel-grus-normconf]: https://www.youtube.com/watch?v=MW9oVxjJHEw
@@ -114,3 +115,5 @@ Simple is better than complex.
 [unix-wiki]: https://en.wikipedia.org/wiki/Unix_philosophy
 [robert-erdmann-twitter]: https://twitter.com/erdmann?lang=en
 [robert-erdmann-keynote]: https://www.youtube.com/watch?v=kMfl5SzfkVc&list=PLGVZCDnMOq0pADyz2VboxPFIdrsozlENg&index=8&ab_channel=PyData
+
+<img src="../../../../../images/written-by-human.svg" align="right">

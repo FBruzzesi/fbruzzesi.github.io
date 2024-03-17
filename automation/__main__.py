@@ -49,7 +49,7 @@ TAGS_OPTION = Annotated[Optional[str], Option(help="Tags", callback=multi_value_
 CATEGORIES_OPTION = Annotated[Optional[str], Option(help="Categories", callback=multi_value_callback)]
 
 
-@app.command()
+@app.command(name="create-new")
 def create_new(
     title: TITLE_OPTION,
     authors: AUTHORS_OPTION = "fbruzzesi",

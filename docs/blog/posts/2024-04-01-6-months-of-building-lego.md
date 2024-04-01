@@ -38,11 +38,17 @@ This is not an article about OSS (maybe I will write one in the future), all I w
 
 ## The first few contributions
 
-## The present
+```terminal
+git clone https://github.com/koaning/scikit-lego
+cd scikit-lego/sklego
+find . -name '*.py' | xargs wc -l | grep total
+```
 
-## The future
+```terminal
+10860 total
+```
 
-
+## A tour of my favorite features
 
 <img src="../../../../../images/written-by-human.svg" align="right">
 

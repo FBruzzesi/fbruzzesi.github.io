@@ -3,6 +3,8 @@ draft: false
 date: 2024-01-29
 authors:
   - fbruzzesi
+categories:
+  - Thoughts
 ---
 
 # An Ode to Simplicity

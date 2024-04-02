@@ -7,19 +7,19 @@ authors:
 
 # 👋 Hello world
 
-Roughly one year ago I attended one of the most interesting and fun (online) conference you could ever attend: the one and only [NormConf][normconf], organized by [Vicki Boykis][vicki-boykis].
+Roughly one year ago I attended one of the most interesting and fun (online) conference you could ever attend: the one and only [NormConf][normconf]{:target="_blank"}, organized by [Vicki Boykis][vicki-boykis]{:target="_blank"}.
 
 <!-- more -->
 
 The speakers list was just out of this world, I don't think you can organize a better conference than that on what it does matter on the day to day in the data science ecosystem.
 
-If you are curious, all the talks are available on [YouTube][youtube-normconf].
+If you are curious, all the talks are available on [YouTube][youtube-normconf]{:target="_blank"}.
 
 But what does this have to do with this blog? Why am I writing about a conference I attended more than a year ago?
 
 ## The motivation behind this blog
 
-One of the talk that resonated with me the most was the one by [Chris Albon][chris-albon], titled [Don't Do Invisible Work][chris-talk]. In this talk, Chris explains why it matters to keep track of your work, and how to do it in work environments that don't have a formal system in place for it.
+One of the talk that resonated with me the most was the one by [Chris Albon][chris-albon]{:target="_blank"}, titled [Don't Do Invisible Work][chris-talk]{:target="_blank"}. In this talk, Chris explains why it matters to keep track of your work, and how to do it in work environments that don't have a formal system in place for it.
 
 A TL;DR of the talk would come from two slides:
 
@@ -52,7 +52,7 @@ So, one year later, I am finally starting to write down my thoughts and what I l
 
 I am not going to write a tutorial on how to set up a blog, mostly because I have no idea.
 
-The only thing I can say is that mkdocs-material [blog plugin][mkdocs-material-blog] makes it increadibly easy to set up a blog using mkdocs and integrating with [GitHub Pages][gh-pages]. Every article is just a markdown file, written in the same way as any other mkdocs page (which is great, because I am already using mkdocs for my open source projects), and the blog plugin takes care of the rest.
+The only thing I can say is that mkdocs-material [blog plugin][mkdocs-material-blog]{:target="_blank"} makes it increadibly easy to set up a blog using mkdocs and integrating with [GitHub Pages][gh-pages]{:target="_blank"}. Every article is just a markdown file, written in the same way as any other mkdocs page (which is great, because I am already using mkdocs for my open source projects), and the blog plugin takes care of the rest.
 
 mkdocs-material is an amazing theme, and I am very happy with it for its simplicity and customizability.
 

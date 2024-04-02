@@ -77,7 +77,7 @@ Oh gosh! That's a lot of nested functions! Let's break it down:
     * raises an `exception` if it is `True`
     * otherwise, it returns the result of `func`
 
-If you want to read more about decorators with arguments, I wrote about it in the [deczoo documentation][deczoo].
+If you want to read more about decorators with arguments, I wrote about it in the [deczoo documentation][deczoo]{:target="_blank"}.
 
 ## Type Annotation
 

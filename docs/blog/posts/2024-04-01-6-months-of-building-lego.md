@@ -9,7 +9,7 @@ categories:
   - Python
 ---
 
-# 6 months of building lego bricks 🧱
+# 6 months of playing with lego bricks 🧱
 
 No I am not talking about the physical legos. Although as a kid I truly loved playing with them, I am talking about collaborating in the maintenance and development of [scikit-lego][scikit-lego]{:target="_blank"}.
 
@@ -30,25 +30,51 @@ Now having a bit more experience and confidence, as well as being a scikit-lego 
 
 Until we got to the point in which Vincent gently offers to bother him at PyData Amsterdam 2023:
 
-[<img src="../../../../../images/2024-04-01-6-months-of-building-lego/vincent-offer.png">][thread]{:target="_blank"}
+[<img src="../../../../../images/2024-04-01-6-months-of-playing-with-lego-bricks/vincent-offer.png">][thread]{:target="_blank"}
 
-which I did. That started a conversation with Vincent and Matthijs, the two creators of scikit-lego, that led to being invited as a project contributor/maintainer.
+which I did. That started a conversation with Vincent and Matthijs, the two creators of scikit-lego, that led to being invited as a project maintainer.
 
-This is not an article about OSS (maybe I will write one in the future), all I want to say on the reasons why I dived into this opportunity is that I enjoy the process of building and maintaining developers tools, and until that point my target audience has never been larger than my company for internal work, and a handful of people in the open source community. This was a chance to maintain a library that has a fairly large reach in the data science community, yet it is not *too* big that I would feel overwhelmed by the amount of tech debt and issues to untangle before being able to contribute, nor that the review process would be too slow. It honestly felt like the perfect opportunity to start contributing to a project that I use and love.
+This is not an article about OSS (maybe I will write one in the future), all I want to say on the reasons why I searched such opportunity: I enjoy the process of building and maintaining developers tools, and until that point my target audience has never been larger than my company for internal work, and a handful of people in the open source community. This was a chance to maintain a library that has a fairly large reach in the data science community, yet it is not *too* big that I would feel overwhelmed by the amount of tech debt before being able to contribute, nor that the responsibility and pressure to maintain it would be too high. It honestly felt like the perfect opportunity to start contributing to a project that I use and love.
 
 ## The first few contributions
 
-```terminal
-git clone https://github.com/koaning/scikit-lego
-cd scikit-lego/sklego
-find . -name '*.py' | xargs wc -l | grep total
-```
+When I joined as a mainter the codebase had roughly ~7k lines of codes, and until that moment I had been mostly a user, and certainly I was not aware of most of the details of the library.
 
-```terminal
-10860 total
-```
+??? info "Codebase size"
+
+    ```terminal
+    git clone https://github.com/koaning/scikit-lego
+    cd scikit-lego
+    git checkout c1d413e8ae24350527f3b5bafa7d55b82e95c0cb # roughly the last commit before I joined
+    find sklego -name '*.py' | xargs wc -l | grep total
+    ```
+
+    ```terminal
+    7051 total
+    ```
+
+The first good opportunity to contribute and explore the library in more detail was made possible by a few rendering bugs in the documentation caused by a mixed style of numpy and sphinx usage in the docstrings. I felt like the docs were deserving more love and that was a low hanging way of learning more about features I never used before.
+
+That played out quite well (for me):
+
+- I discovered a few cool features I was not aware of.
+- I learned more about the implementation details of the library.
+- Finally, I was able to make a list of features I wanted to implement in the future as well as a list of issues I wanted to tackle.
 
 ## A tour of my favorite features
+
+## The best part of it all
+
+Personally there are a few good reasons why I love to work on this project.
+
+scikit-lego allows to implement features that may appear to be *very* experimental, yet they have a *somewhat* clear use case in practice. This kind of freedom in thought and implementation is something I value a lot, and it is not always possible.
+
+Secondly we move <s>fast</s> calmly and (may) break things:
+
+- Calmly because there is no pressure to release a new version every day-week-month. We release whenever new features are implemented, and there is no deadline to meet for that.
+- Break things, we actually try not to, yet sometimes it happens if that means we can improve the library.
+
+## What to expect in the future
 
 <img src="../../../../../images/written-by-human.svg" align="right">
 

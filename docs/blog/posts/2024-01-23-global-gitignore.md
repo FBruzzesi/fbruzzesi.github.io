@@ -45,7 +45,7 @@ The steps are really simple:
     ```
 
     1. This is a notebook I typically have and use for development, exploration and experimentation. I don't want to commit it to the repository.
-    2. Settings for [typos: source code spell checker](https://github.com/crate-ci/typos)
+    2. Settings for [typos: source code spell checker](https://github.com/crate-ci/typos){:target="_blank"}
 
 3. Make **git** aware of such global configuration by setting the `core.excludesFile` property to the path of the `.gitignore` file you just created:
 

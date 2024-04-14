@@ -3,6 +3,8 @@ draft: false
 date: 2024-01-29
 authors:
   - fbruzzesi
+categories:
+  - Thoughts
 ---
 
 # An Ode to Simplicity
@@ -43,7 +45,7 @@ Whenever starting a project, I ask myself the following question:
 **What's the simplest possible thing that might work? (1)**
 { .annotate }
 
-1. From Joel Grus talk at Normconf: [What's the simplest possible thing that might work, and why didn't you try that first?][joel-grus-normconf]
+1. From Joel Grus talk at Normconf: [What's the simplest possible thing that might work, and why didn't you try that first?][joel-grus-normconf]{:target="_blank"}
 
 This question encapsulates the essence of simplicity in problem-solving. We should recognize that it is not uncommon that complexity arises from overengineering solutions or incorporating unnecessary features _when do not serve a purpose_.
 
@@ -53,7 +55,7 @@ Simplicity is not a one-time decision but an ongoing commitment, iterative and i
 
 ### Pareto Principle
 
-If you don't believe me, believe the [Pareto Principle][pareto-wiki], also known as the 80/20 rule.
+If you don't believe me, believe the [Pareto Principle][pareto-wiki]{:target="_blank"}, also known as the 80/20 rule.
 
 The Pareto Principle, is a guiding principle that resonates deeply with the simplicity approach and mindset.
 
@@ -71,7 +73,7 @@ While cutting-edge algorithms and sophisticated models have their place for many
 
 If those reasons are not enough, it is still best practice to start with a baseline model and then iterate on it by adding complexity.
 
-As concrete example of simplicity in data science, I would like to mention an amazing keynote by [Dr. Robert Erdmann][robert-erdmann-twitter] at PyData Amsterdam 2023: [Python for Imaging and Artificial Intelligence in Cultural Heritage][robert-erdmann-keynote]. Very well invested ~35 minutes of your time, you won't regret a second of it.
+As concrete example of simplicity in data science, I would like to mention an amazing keynote by [Dr. Robert Erdmann][robert-erdmann-twitter]{:target="_blank"} at PyData Amsterdam 2023: [Python for Imaging and Artificial Intelligence in Cultural Heritage][robert-erdmann-keynote]{:target="_blank"}. Very well invested ~35 minutes of your time, you won't regret a second of it.
 
 During the keynote is Dr. Erdmann made me feel quite uncomfortable for how embarrassingly well he manages to break down complex problems into simple ones, solve them individually and then combine them together to solve the original problem.
 
@@ -81,7 +83,7 @@ I find this to be the perfect examplification of what I mean by simplicity in da
 
 ## Unix philosophy
 
-As last but not least mention, consider the [Unix philosophy][unix-wiki], a timeless testament to the power of simplicity. Its core tenets – "Do One Thing and Do It Well" and "Write Programs to Work Together" – have inspired generations of developers. By adhering to these principles, we create modular, easily understandable code that stands the test of time.
+As last but not least mention, consider the [Unix philosophy][unix-wiki]{:target="_blank"}, a timeless testament to the power of simplicity. Its core tenets – "Do One Thing and Do It Well" and "Write Programs to Work Together" – have inspired generations of developers. By adhering to these principles, we create modular, easily understandable code that stands the test of time.
 
 ## Conclusion
 

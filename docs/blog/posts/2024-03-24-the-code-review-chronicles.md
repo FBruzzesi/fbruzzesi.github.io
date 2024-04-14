@@ -3,6 +3,9 @@ draft: false
 date: 2024-03-24
 authors:
   - fbruzzesi
+categories:
+  - Thoughts
+  - Programming
 ---
 
 # The Code Review Chronicles (in industry)

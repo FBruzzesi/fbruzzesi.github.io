@@ -23,13 +23,13 @@ Say no more! You can set a global `.gitignore` file that will be used _everywher
 The steps are really simple:
 
 1. Create a `.gitignore` file, typically in your home directory:
-  
+
     ```bash
     touch ~/.gitignore
     ```
 
 2. Open you favourite editor and add to such `.gitignore` file whatever file, folder and pattern you _always_ want to ignore.
-  
+
     My personal configuration looks something like this:
 
     ```bash
@@ -45,7 +45,7 @@ The steps are really simple:
     ```
 
     1. This is a notebook I typically have and use for development, exploration and experimentation. I don't want to commit it to the repository.
-    2. Settings for [typos: source code spell checker](https://github.com/crate-ci/typos){:target="_blank"}
+    2. Settings for [typos: source code spell checker][gh-typos]{:target="_blank"}
 
 3. Make **git** aware of such global configuration by setting the `core.excludesFile` property to the path of the `.gitignore` file you just created:
 
@@ -54,9 +54,11 @@ The steps are really simple:
     ```
 
 4. That's it, you are set and done! 🎉
-  
+
 From now on, every time you run a git command the files and patterns you added to the global `.gitignore` file will be ignored.
 
 Happy coding! 🚀
 
 <img src="../../../../../images/written-by-human.svg" align="right">
+
+[gh-typos]: https://github.com/crate-ci/typos

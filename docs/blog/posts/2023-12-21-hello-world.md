@@ -5,7 +5,7 @@ authors:
   - fbruzzesi
 ---
 
-# 👋 Hello world
+# Hello world 👋
 
 Roughly one year ago I attended one of the most interesting and fun (online) conference you could ever attend: the one and only [NormConf][normconf]{:target="_blank"}, organized by [Vicki Boykis][vicki-boykis]{:target="_blank"}.
 
@@ -38,7 +38,7 @@ This is great advice that everyone should follow at work (I am sad to admit I di
 
 ## One year later
 
-I was considering starting a blog, or at least a TIL (Today I Learned) section, for a while now. 
+I was considering starting a blog, or at least a TIL (Today I Learned) section, for a while now.
 
 Not that I think I have something particularly interesting to say, but I do believe that writing down what I learn is a great way to consolidate the knowledge and to have a reference point for the future, at least for my future self.
 
@@ -56,6 +56,8 @@ The only thing I can say is that mkdocs-material [blog plugin][mkdocs-material-b
 
 mkdocs-material is an amazing theme, and I am very happy with it for its simplicity and customizability.
 
+<img src="../../../../../images/written-by-human.svg" align="right">
+
 [normconf]: https://normconf.com/
 [vicki-boykis]: https://twitter.com/vboykis
 [youtube-normconf]: https://www.youtube.com/@normconf/featured
@@ -63,5 +65,3 @@ mkdocs-material is an amazing theme, and I am very happy with it for its simplic
 [chris-talk]: https://www.youtube.com/watch?v=HiF83i1OLOM&list=WL&index=89&ab_channel=NormConf
 [mkdocs-material-blog]: https://squidfunk.github.io/mkdocs-material/plugins/blog/
 [gh-pages]: https://pages.github.com/
-
-<img src="../../../../../images/written-by-human.svg" align="right">

@@ -112,10 +112,10 @@ Simple is better than complex.
 Complex is better than complicated.
 ```
 
+<img src="../../../../../images/written-by-human.svg" align="right">
+
 [joel-grus-normconf]: https://www.youtube.com/watch?v=MW9oVxjJHEw
 [pareto-wiki]: https://en.wikipedia.org/wiki/Pareto_principle
 [unix-wiki]: https://en.wikipedia.org/wiki/Unix_philosophy
 [robert-erdmann-twitter]: https://twitter.com/erdmann?lang=en
 [robert-erdmann-keynote]: https://www.youtube.com/watch?v=kMfl5SzfkVc&list=PLGVZCDnMOq0pADyz2VboxPFIdrsozlENg&index=8&ab_channel=PyData
-
-<img src="../../../../../images/written-by-human.svg" align="right">

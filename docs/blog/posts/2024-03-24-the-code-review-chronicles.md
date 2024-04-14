@@ -24,7 +24,7 @@ What I will not explore are:
 
 - Open-source projects, where dynamics may differ, and have a different set of rules, meta rules and expectations from all the parties involved.
 - _Shallow_ PRs, where the changes are minimal or trivial.
-  
+
 I will focus on the more complex PRs, where the changes are significant and actually matter such as new features, logics alteration, refactoring, etc..
 
 Please note that my insights are based on personal experiences and most likely vary across teams and organizations. Nevertheless, I aim abstract some principles applicable in most scenarios.
@@ -61,11 +61,11 @@ Let me explain: when a new feature or a bug fix is requested by the business, th
 Possibly this is the first time that the author is thinking about the feature, however the requests may come in many different forms:
 
 !!! quote "The requests"
-  
+
     PlEaSe add tHiS fEaTuRe ASAP!
 
     The toOl Is not working!
-    
+
     I neED iT... fOr YeStErDaY
 
 Sounds familiar?

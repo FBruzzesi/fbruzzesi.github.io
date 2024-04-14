@@ -12,7 +12,7 @@ tags:
   - TIL
 ---
 
-# ❗Raise if... "prod"
+# Raise if... "prod"❗
 
 Last weekend I was meeting with a former colleague of mine and we were discussing about some python code, as one does during a weekend.
 
@@ -107,6 +107,6 @@ def raise_if(
 
 [^1]: In this implementation `condition` is a callable that takes no arguments and returns a boolean value. It is evaluated at runtime, so it can be as complex as you want it to be.
 
-[deczoo]: https://fbruzzesi.github.io/deczoo/decorators/advanced/#decorators-with-arguments
-
 <img src="../../../../../images/written-by-human.svg" align="right">
+
+[deczoo]: https://fbruzzesi.github.io/deczoo/decorators/advanced/#decorators-with-arguments

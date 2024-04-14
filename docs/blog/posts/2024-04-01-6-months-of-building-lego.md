@@ -78,7 +78,7 @@ That led to a deep dive into the codebase, some debugging, and a few discussions
 
 However, that would have led to either a *huge* breaking change in the API or a messy implementation of *if-else* cases, which would have been hard to both maintain and clearly explain in full detail in the documentation. Therefore, we decided to move forward with an entire new class and implementation from scratch.
 
-Enter the [`HierarchicalPredictor`][hierarchical-predictor] class 🎉
+Enter the [`HierarchicalPredictor`][hierarchical-predictor]{:target="_blank"} class 🎉
 
 This is a more flexible and *capable* (and so far bug free) base class that implements the improvements just mentioned and from which two task specific classes, `HierarchicalClassifier` and `HierarchicalRegressor`, inherit.
 

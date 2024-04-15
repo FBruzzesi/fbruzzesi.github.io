@@ -16,4 +16,4 @@ I wrote about it in my first post, [Hello World][hello-world]. In extreme synthe
 [mkdocs]: https://www.mkdocs.org/
 [mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
 [blog-plugin]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
-[hello-world]: https://fbruzzesi.github.io/blog/2023/12/21/-hello-world/
+[hello-world]: https://fbruzzesi.github.io/blog/2023/12/21/hello-world-/

@@ -84,7 +84,7 @@ Say no more! Enter: `does_not_raise`.
     I really tried to dig deep to find when and how I came across this trick in the first place, but I couldn't manage to figure it out.
     I am honestly sorry for that 😞
 
-Given the above behavior, all we need is a context that does... litteraly nothing! Lo and behold, python standard library offers that as [contextlib.nullcontext][nullcontext].
+Given the above behavior, all we need is a context that does... literally nothing! Lo and behold, python standard library offers that as [contextlib.nullcontext][nullcontext].
 
 Let's rewrite the two example above as a unique test:
 

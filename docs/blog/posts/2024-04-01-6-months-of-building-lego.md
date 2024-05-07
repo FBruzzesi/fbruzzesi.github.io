@@ -105,7 +105,7 @@ Happy coding! 🚀
 
 <img src="../../../../../images/written-by-human.svg" align="right">
 
-[^1]: Vincent had to review two *not so nice* PRs of mine. [#586](https://github.com/koaning/scikit-lego/pull/586){:target="_blank"} and [#589](https://github.com/koaning/scikit-lego/pull/589){:target="_blank"}
+[^1]: Vincent had to review two *not so nice* PRs of mine: [#586](https://github.com/koaning/scikit-lego/pull/586){:target="_blank"} and [#589](https://github.com/koaning/scikit-lego/pull/589){:target="_blank"}
 
 [scikit-lego]: https://koaning.github.io/scikit-lego/
 [untitled12-talk]: https://youtu.be/yXGCKqo5cEY?si=rUbBpniqAvu68PHi&t=1592

@@ -11,6 +11,9 @@ Two weeks ago, I had the incredible opportunity to participate in [NumHack 2024]
 
 We came for the fun, we stayed for the challenge, and we left with the prize 🏆
 
+!!! tip
+    Spoiler alert: If you want to get a sense of the final outcome before reading the rest of the post, you can watch the [video submission][video-submission]{:target="_blank"} we prepared.
+
 <!-- more -->
 
 ## The challenge
@@ -37,12 +40,18 @@ As the hackaton started, we started brainstorming ideas. Fabrizio had a great ta
 * What's the impact of it?
 * How would an implementation look like in practice?
 
-After a few iterations (read as, 2 hours of almost nosense), again Fabrizio came up with two good candidates we all liked:
+After a few iterations (read as: 2 hours of almost nosense), Fabrizio came up with two good candidates we all liked:
 
-1. Build a webapp to analyze how the politiciations in the EU are acting with respect to policies, versus what they are saying or their party is promoting. The idea would have built on top of [howtheyvode.eu][how-they-vote]{:target="_blank"} project.
-2. On one size build a mobile app to help citizen to report issues to the local authorities, and to keep track of the status of the issue. On the other side, build a webapp for the local authorities to manage the issues reported by the citizens.
+1. Analyze how the politicians in the EU are acting with respect to policies, versus what they are saying or their party is promoting. The idea would have built on top of [howtheyvode.eu][how-they-vote]{:target="_blank"} project.
+2. Empowering communities to build better cities, through:
 
-We decided to go with the second idea, as it was going to check more boxes in what we were looking for in the challenge: namely, such application would resonate with everyone, we knew how to build it, and machine learning would have helped in the automation of the process.
+    * A mobile app in which citizens can report issues to the local authorities, and keep track of the status of the issue.
+    * A platform for the local authorities to manage and analyze the issues reported.
+
+!!! info
+    This idea actually originated from Fabrizio's friend [Juan Severino][juan-severino], which we contacted during the hackaton to ask for permission to use it.
+
+We decided to go with the second idea, as it was going to check more boxes in what we were looking for in the challenge: namely, such application would resonate with everyone globally, we knew how to build it, and machine learning would have helped in the automation of the process.
 
 ## The hacking
 
@@ -66,7 +75,7 @@ Here I want to mention a few takeaways from the hacking and coding part itself.
 ### The bad
 
 * Ok the obvious one: we did not have a mobile app developer nor any experience with that. And we knew it from the beginning. Yet we did the smart choice of not trying to learn it on the fly. I think that would end up being a wast of time for what one of use could have achieved in less than 72 hours.
-* Similarly, we did not have a designer.
+* Similarly, we did not have a designer to advise us how to make the application look aesthetically pleasing. We did our best, yet we know that the application is not the most beautiful thing you have ever seen.
 
 In general, we could have had a more diverse team in terms of skills, yet again, we were there for the fun and the learnings.
 
@@ -80,10 +89,6 @@ On the flip and positive side, I can see myself sporadically working on the proj
 
 In the meantime, I am looking forward to the next hackaton, and to the next opportunity to work with Jurij and Fabrizio. We had a blast 😉
 
-## Other resources
-
-We also submitted a video for the hackaton submission: [watch it here][video-submission]{:target="_blank"}
-
 ## Extras
 
 A big shoutout to [NumFocus][numfocus]{:target="_blank"} for organizing the hackaton, and to the sponsors. The event was incredibly well organized. I am looking forward to the next edition.
@@ -92,8 +97,9 @@ A big shoutout to [NumFocus][numfocus]{:target="_blank"} for organizing the hack
 
 [num-hack]: https://pydata.org/numhack
 [jurij]: https://www.linkedin.com/in/jurij-wollert-2985a2207/
-[fabrizio]: https://www.linkedin.com/in/fabridamicelli/
+[fabrizio]: https://github.com/fabridamicelli
 [how-they-vote]: https://howtheyvote.eu
+[juan-severino]: https://www.xing.com/profile/Juan_Severino2
 [moin-moin-repo]: https://github.com/FBruzzesi/moin-moin
 [sentence-transformers]: https://github.com/UKPLab/sentence-transformers
 [video-submission]: https://drive.google.com/file/d/1LdL8C3gbD0zsMX4-NNfKo68huBDYRFSP/view

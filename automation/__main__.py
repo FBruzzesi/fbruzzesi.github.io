@@ -43,16 +43,10 @@ def authors_callback(value: str) -> tuple[str, ...]:
 app = Typer(name="automation CLI", help="CLI for automating tasks")
 
 TITLE_OPTION = Annotated[str, Option(help="Post title")]
-AUTHORS_OPTION = Annotated[
-    str, Option(help="Authors, must be in `.authors.yml`", callback=authors_callback)
-]
+AUTHORS_OPTION = Annotated[str, Option(help="Authors, must be in `.authors.yml`", callback=authors_callback)]
 DATE_OPTION = Annotated[str, Option(help="Post date")]
-TAGS_OPTION = Annotated[
-    Optional[str], Option(help="Tags", callback=multi_value_callback)
-]
-CATEGORIES_OPTION = Annotated[
-    Optional[str], Option(help="Categories", callback=multi_value_callback)
-]
+TAGS_OPTION = Annotated[Optional[str], Option(help="Tags", callback=multi_value_callback)]
+CATEGORIES_OPTION = Annotated[Optional[str], Option(help="Categories", callback=multi_value_callback)]
 
 
 @app.command(name="create-new")

@@ -30,11 +30,11 @@ Before the event started we did not have a clear idea of where we would end up i
 * We would end up learning something.
 * Our outcome would have been something tangible, and more than just an idea.
 
-Given these _constraints_, I knew in the back of my mind that Global impact was the most appealing to me to break out of what I usually do, and that the Train category would have been a stretch given out skillset and the time at our disposal.
+Given these _constraints_, I knew in the back of my mind that Global impact was the most appealing to me to break out of what I usually do, and that the Train category would have been a stretch given our skillset and the time at our disposal.
 
 ## The idea
 
-As the hackaton started, we started brainstorming ideas. Fabrizio had a great take in keeping everything very, **very**, high level; yet at the same time for each proposal, we would ask ourselves:
+As the hackaton kicked off, we brainstormed ideas for a good chunk of the first half day. Fabrizio had a great take in keeping everything very, **very**, high level; yet at the same time for each proposal, we would ask ourselves:
 
 * Is this something that we would be proud of?
 * What's the impact of it?
@@ -42,14 +42,14 @@ As the hackaton started, we started brainstorming ideas. Fabrizio had a great ta
 
 After a few iterations (read as: 2 hours of almost nosense), Fabrizio came up with two good candidates we all liked:
 
-1. Analyze how the politicians in the EU are acting with respect to policies, versus what they are saying or their party is promoting. The idea would have built on top of [howtheyvode.eu][how-they-vote]{:target="_blank"} project.
+1. Analyze how the politicians in the EU are acting with respect to policies, versus what they are saying or their party is promoting. The idea would have built on top of [howtheyvote.eu][how-they-vote]{:target="_blank"} project.
 2. Empowering communities to build better cities, through:
 
     * A mobile app in which citizens can report issues to the local authorities, and keep track of the status of the issue.
     * A platform for the local authorities to manage and analyze the issues reported.
 
 !!! info
-    This idea actually originated from Fabrizio's friend [Juan Severino][juan-severino], which we contacted during the hackaton to ask for permission to use it.
+    This idea actually originated from Fabrizio's friend [Juan Severino][juan-severino], which we contacted to ask for permission to build on such idea.
 
 We decided to go with the second idea, as it was going to check more boxes in what we were looking for in the challenge: namely, such application would resonate with everyone globally, we knew how to build it, and machine learning would have helped in the automation of the process.
 
@@ -57,7 +57,7 @@ We decided to go with the second idea, as it was going to check more boxes in wh
 
 Let's start from the obvious: none of us knows how to make a mobile app, therefore, we decided to go with a webapp only - as a mockup - also for the citizen side.
 
-Most of the implementation details were required for the submission, and I will not repeat them here. If you are interested, you can read the details in the [project page][moin-moin-repo]{:target="_blank"} on github.
+Most of the implementation details were required for the submission, and I will not repeat them here. If you are interested, you can read the details in the [project page][moin-moin-repo]{:target="_blank"} on github: the README file is quite detailed, and it includes high level description, core features, how to get started and the tech stack we used.
 
 Here I want to mention a few takeaways from the hacking and coding part itself.
 

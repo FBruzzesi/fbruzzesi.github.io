@@ -56,7 +56,7 @@ def create_new(
     date: DATE_OPTION = datetime.now().strftime("%Y-%m-%d"),
     tags: TAGS_OPTION = None,
     categories: CATEGORIES_OPTION = None,
-):
+) -> None:
     """Create a new post in `docs/blog/posts` with the given title, authors, date, tags and categories."""
 
     values = {

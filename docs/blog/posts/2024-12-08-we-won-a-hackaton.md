@@ -83,7 +83,7 @@ In general, we could have had a more diverse team in terms of skills, yet again,
 
 So what's next? The real answer is that we don't know.
 
-I personally really like the idea and the project, and I would like to further develop it. Yet, some of the shortcomings we had during the hackaton won't chase to exists in the near future, in particular none of us is a designer nor particularly interested in becoming a mobile app developer.
+I personally really like the idea and the project, and I would like to further develop it. Yet, some of the shortcomings we had during the hackaton won't cease to exists in the near future, in particular none of us is a designer nor particularly interested in becoming a mobile app developer.
 
 On the flip and positive side, I can see myself sporadically working on the project to improve the machine learning part. We barely scratched the surface of what we could have done with vision models, and I am sure that there is a lot of room for improvement. Some of the ideas are exposed in the project page, and I am looking forward to working on them.
 

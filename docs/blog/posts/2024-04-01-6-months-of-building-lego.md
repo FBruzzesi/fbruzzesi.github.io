@@ -1,6 +1,7 @@
 ---
 draft: false
 date: 2024-04-14
+comments: true
 authors:
   - fbruzzesi
 categories:

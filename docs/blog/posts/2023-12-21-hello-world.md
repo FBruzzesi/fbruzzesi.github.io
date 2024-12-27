@@ -1,6 +1,7 @@
 ---
 draft: false
 date: 2023-12-21
+comments: true
 authors:
   - fbruzzesi
 ---

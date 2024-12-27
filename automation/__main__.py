@@ -22,28 +22,9 @@ def multi_value_callback(value: Optional[str] = None) -> Optional[tuple[str, ...
     return split_on(value, ",") if value else None
 
 
-def authors_callback(value: str) -> tuple[str, ...]:
-    """Callback for authors option, split the value on commas and validating that the authors exist in the authors list.
-
-    The authors list is defined in `docs/blog/.authors.yml`.
-    """
-    with open(AUTHORS_PATH, "r") as stream:
-        authors = yaml.safe_load(stream).get("authors", {})
-        allowed_authors = set(authors.keys())
-
-    input_authors = split_on(value, ",")
-
-    for author in input_authors:
-        if author not in allowed_authors:
-            raise ValueError(f"Author `{author}` not found in authors list")
-
-    return input_authors
-
-
 app = Typer(name="automation CLI", help="CLI for automating tasks")
 
 TITLE_OPTION = Annotated[str, Option(help="Post title")]
-AUTHORS_OPTION = Annotated[str, Option(help="Authors, must be in `.authors.yml`", callback=authors_callback)]
 DATE_OPTION = Annotated[str, Option(help="Post date")]
 TAGS_OPTION = Annotated[Optional[str], Option(help="Tags", callback=multi_value_callback)]
 CATEGORIES_OPTION = Annotated[Optional[str], Option(help="Categories", callback=multi_value_callback)]
@@ -52,7 +33,6 @@ CATEGORIES_OPTION = Annotated[Optional[str], Option(help="Categories", callback=
 @app.command(name="create-new")
 def create_new(
     title: TITLE_OPTION,
-    authors: AUTHORS_OPTION = "fbruzzesi",
     date: DATE_OPTION = datetime.now().strftime("%Y-%m-%d"),
     tags: TAGS_OPTION = None,
     categories: CATEGORIES_OPTION = None,
@@ -61,7 +41,6 @@ def create_new(
 
     values = {
         "title": title,
-        "authors": authors,
         "date": date,
         "tags": tags,
         "categories": categories,

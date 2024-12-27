@@ -1,9 +1,9 @@
 ---
 draft: true
 date: {{date}}
+comments: true
 authors:
-{% for author in authors %}
-  - {{author}}
+  - fbruzzesi
 {% endfor %}
 {%if categories %}
 categories:

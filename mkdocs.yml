@@ -12,6 +12,7 @@ repo_url: https://github.com/fbruzzesi/fbruzzesi.github.io
 use_directory_urls: true
 theme:
   name: material
+  custom_dir: overrides
   font:
     text: Ubuntu
     code: Ubuntu Mono
@@ -32,33 +33,15 @@ theme:
     toggle:
       icon: material/lightbulb-outline
       name: Switch to dark mode
-  
+
   logo: images/blog-logo.svg
   favicon: images/blog-logo.svg
 
   features:
     - navigation.indexes
     - navigation.tabs
-    
-    # - navigation.path
-    # - navigation.indexes
-    # - navigation.footer
-    # - navigation.top
-    # - navigation.tracking
-
-    # - content.action.edit
-    # - content.action.view
     - content.code.annotate
     - content.code.copy
-    # - content.tooltips
-    # - content.tabs.link
-
-    # - search.suggest
-    # - search.highlight
-    # - search.share
-    # - search.suggest
-
-    # - toc.follow
 
 # Plugins
 plugins:
@@ -108,7 +91,7 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  
+
   # - pymdownx.keys
   # - pymdownx.magiclink:
   #     repo_url_shorthand: true

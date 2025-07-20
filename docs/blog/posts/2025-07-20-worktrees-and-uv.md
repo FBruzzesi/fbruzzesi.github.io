@@ -4,6 +4,10 @@ date: 2025-07-20
 comments: true
 authors:
   - fbruzzesi
+categories:
+  - Tips
+  - Programming
+  - Python
 ---
 
 # Stop Context-Switching: How Git Worktree + UV Revolutionized my python workflow

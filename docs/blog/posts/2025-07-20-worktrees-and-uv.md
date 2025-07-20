@@ -72,7 +72,7 @@ pip install pytest coverage   # more waiting time
 
 By the time you finished setting up the environment, you'd lost your flow state anyway.
 
-## UV changes everything
+## `uv` changes everything
 
 Then `uv` came along and made this workflow _actually_ practical.
 UV's speed and intelligent caching transformed worktrees from "theoretically useful" to "absolutely essential."

@@ -3,7 +3,6 @@ import re
 
 from datetime import datetime
 from typing import Annotated, Final, Optional
-import yaml
 
 from jinja2 import Template
 from typer import Typer, Option

@@ -40,8 +40,10 @@ The traditional Python workflow was brutal:
 
 This wasn't just context-switching, it was context obliteration.
 
-The alternative I have seen multiple times is to have different clones of the same repo, which also can get quite
-impractical to manage very quickly.
+The alternative I have seen multiple times is to have different clones of the same repo,
+which can get quite impractical to manage very quickly.
+
+With separate clones, you lose the shared git history, waste disk space, and have to manually keep remotes in sync - worktrees solve all of these issues while keeping everything under one repository umbrella.
 
 ## Enter `git worktree`
 
@@ -57,10 +59,13 @@ git worktree add ../myproject-hotfix main
 # myproject-hotfix/   (main branch, but no venv yet...)
 ```
 
-This was great for avoiding context-switching, but there is (well actually _was_) still a problem.
+This gives you a clean separation where each worktree operates independently, with different branches checked out yet same git history. No more losing your place when switching contexts!
 
-If you need a virtual environment (and don't want to mess around with the main repo one), you will need to create a new
-one on each worktree. This process was painfully slow:
+But there is (well actually _was_) still a problem: if you need a virtual environment
+(and don't want to mess around with the main repo one), you will need to create a new
+one on each worktree.
+
+This process was painfully slow:
 
 ```bash
 cd ../myproject-hotfix
@@ -91,67 +96,71 @@ What used to take minutes now takes under a second. The difference is game-chang
 
 ## The modern python workflow
 
-I recently started to experiment with [just recipes][just], and this is the global recipe I set up (thanks LLMs):
+I recently started to experiment with [just recipes][just], and I set up a global recipe called `worktree` that takes as input:
 
-```bash
-cat >> ~/.justfile << 'EOF'
-[doc("""
-Create a new git worktree with Python virtual environment setup.
+- a branch name
+- a python version (optional)
 
-Examples:
+??? abstract "`~/.justfile`"
 
-* Create worktree for branch 'feature/foo-bar' with Python 3.11
-just worktree feature/foo-bar 3.11
+    ```bash
+    [doc("""
+    Create a new git worktree with Python virtual environment setup.
 
-* Create worktree for branch 'hotfix/bug-123' with Python 3.12
-just worktree hotfix/bug-123 3.12
+    Examples:
 
-* Create worktree for branch 'develop' with default Python (3.12)
-just worktree develop
-""")]
-worktree branch python="3.12" working_dir=invocation_directory():
-    #!/bin/bash
-    set -euo pipefail
-    
-    # Change to the directory where just was invoked
-    cd "{{working_dir}}"
-    
-    # Get current directory name
-    current_dir=$(basename "${{working_dir}}")
-    
-    # Create worktree path: ../<current-folder-name>-<branchname>
-    # Replace forward slashes in branch name with dashes for directory name
-    safe_branch=$(echo "{{branch}}" | sed 's/\//-/g')
-    worktree_path="../${current_dir}-${safe_branch}"
+    * Create worktree for branch 'feature/foo-bar' with Python 3.11
+    just worktree feature/foo-bar 3.11
 
-    echo "Creating git worktree for branch '{{branch}}' at path: $worktree_path"
-    
-    # Run git worktree add
-    git worktree add "$worktree_path" origin/main -b "{{branch}}"
-    
-    echo "Moving into worktree directory: $worktree_path"
-    cd "$worktree_path"
-    
-    # Create virtual environment with uv (with python version if specified)
-    echo "Creating virtual environment with uv using Python {{python}}..."
-    uv venv --python "{{python}}"
-    
-    # Activate the virtual environment and install project in editable mode
-    echo "Installing project in editable mode..."
-    source .venv/bin/activate
-    uv pip install -e .
-    
-    echo "✅ Worktree setup complete!"
-    echo "📁 Worktree location: $worktree_path"
-    echo "🐍 To activate the environment, run: source $worktree_path/.venv/bin/activate"
-```
+    * Create worktree for branch 'hotfix/bug-123' with Python 3.12
+    just worktree hotfix/bug-123 3.12
+
+    * Create worktree for branch 'develop' with default Python (3.12)
+    just worktree develop
+    """)]
+    worktree branch python="3.12" working_dir=invocation_directory():
+        #!/bin/bash
+        set -euo pipefail
+        
+        # Change to the directory where just was invoked
+        cd "{{working_dir}}"
+        
+        # Get current directory name
+        current_dir=$(basename "${{working_dir}}")
+        
+        # Create worktree path: ../<current-folder-name>-<branchname>
+        # Replace forward slashes in branch name with dashes for directory name
+        safe_branch=$(echo "{{branch}}" | sed 's/\//-/g')
+        worktree_path="../${current_dir}-${safe_branch}"
+
+        echo "Creating git worktree for branch '{{branch}}' at path: $worktree_path"
+        
+        # Run git worktree add
+        git worktree add "$worktree_path" origin/main -b "{{branch}}"
+        
+        echo "Moving into worktree directory: $worktree_path"
+        cd "$worktree_path"
+        
+        # Create virtual environment with uv (with python version if specified)
+        echo "Creating virtual environment with uv using Python {{python}}..."
+        uv venv --python "{{python}}"
+        
+        # Activate the virtual environment and install project in editable mode
+        echo "Installing project in editable mode..."
+        source .venv/bin/activate
+        uv pip install -e .
+        
+        echo "✅ Worktree setup complete!"
+        echo "📁 Worktree location: $worktree_path"
+        echo "🐍 To activate the environment, run: source $worktree_path/.venv/bin/activate"
+    ```
 
 Now running `just worktree feat/just-for-the-blog` will:
 
 * create a git worktree on the same level of the current folder
 * create a virtual env, activate it and install the codebase in editable mode
 
-The entire setup took less than half a second. This is very acceptable!!!
+The entire setup typically takes just a few seconds - a massive improvement over the minutes required before!
 
 ??? tip "Proof"
 
